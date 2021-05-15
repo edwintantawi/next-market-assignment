@@ -1,0 +1,14 @@
+:root{
+  /* colors */
+  --white: #fff;
+  --blue: #0068C9;
+  --black: #383838;
+  --gray: #656565;
+  --light-gray: #C6C6C6;
+
+  /* font weight */
+  --light: 300;
+  --regular: 400;
+  --semi-bold: 600;
+  --bold: 700;
+}
