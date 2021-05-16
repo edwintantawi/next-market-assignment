@@ -1,35 +1,39 @@
-@import url('./variabels.css');
+@import './variabels.css';
+@import './utils/utils.css';
 
-html{
-  font-size: 16px;
+html {
+	font-size: 12px;
 }
 
-*, *::after, *::before{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
+body {
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
 }
 
-h1,h2{
-  font-weight: var(--semi-bold);
+h1,
+h2 {
+	font-weight: var(--semi-bold);
 }
 
-h1{
-  font-size: 1.5rem; /* 24px */
+h1 {
+	font-size: 1.5rem; /* 24px */
 }
 
-h2{
-  font-size: 1.25rem; /* 20px */
+h2 {
+	font-size: 1.25rem; /* 20px */
 }
 
-p{
-  font-size: 1rem; /* 16px */
-  font-weight: var(--regular);
-  color: var(--gray);
+p {
+	font-size: 1rem; /* 16px */
+	font-weight: var(--regular);
+	color: var(--gray);
 }
