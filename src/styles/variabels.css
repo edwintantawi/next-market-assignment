@@ -1,10 +1,11 @@
-:root{
+:root {
   /* colors */
   --white: #fff;
-  --blue: #0068C9;
+  --blue: #0068c9;
+  --red: #db4747;
   --black: #383838;
   --gray: #656565;
-  --light-gray: #C6C6C6;
+  --light-gray: #c6c6c6;
 
   /* font weight */
   --light: 300;
