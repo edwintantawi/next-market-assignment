@@ -66,15 +66,15 @@
   height: 20px;
   margin-bottom: 4px;
 }
-.auth-wrapper {
+.nav__auth {
   position: relative;
 }
-.nav__auth {
+.nav__auth-action {
   display: none;
   position: absolute;
 }
 
-.nav__auth--active {
+.nav__auth-action--active {
   display: block;
   width: 120px;
   bottom: -110px;
@@ -100,10 +100,10 @@
 }
 
 @media screen and (min-width: 450px) {
-  .nav__auth {
+  .nav__auth-action {
     position: unset;
   }
-  .nav__auth {
+  .nav__auth-action {
     display: flex;
   }
   .nav__auth-toggler {

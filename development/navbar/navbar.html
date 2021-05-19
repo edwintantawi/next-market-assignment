@@ -68,13 +68,13 @@
             </li>
           </ul>
           <!-- auth cta -->
-          <div class="auth-wrapper">
+          <div class="nav__auth">
             <img
               src="../../src/assets/icons/user-avatar.svg"
               alt=""
               class="nav__auth-toggler"
             />
-            <ul class="nav__auth">
+            <ul class="nav__auth-action">
               <li>
                 <a href="signup.html" class="btn btn--fill nav__auth-link">
                   Sign-Up
@@ -93,9 +93,9 @@
 
     <script>
       const authToggler = document.querySelector('.nav__auth-toggler');
-      const navAuth = document.querySelector('.nav__auth');
+      const navAuth = document.querySelector('.nav__auth-action');
       authToggler.addEventListener('click', () => {
-        navAuth.classList.toggle('nav__auth--active');
+        navAuth.classList.toggle('nav__auth-action--active');
       });
     </script>
   </body>
