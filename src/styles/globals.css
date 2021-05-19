@@ -2,38 +2,46 @@
 @import './utils/utils.css';
 
 html {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
-	line-height: 1.5;
-	letter-spacing: 0.5px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
 }
 
 h1,
 h2 {
-	font-weight: var(--semi-bold);
+  font-weight: var(--semi-bold);
 }
 
 h1 {
-	font-size: 1.5rem; /* 24px */
+  font-size: 1.5rem; /* 24px */
 }
 
 h2 {
-	font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem; /* 20px */
 }
 
 p {
-	font-size: 1rem; /* 16px */
-	font-weight: var(--regular);
-	color: var(--gray);
+  font-size: 1rem; /* 16px */
+  font-weight: var(--regular);
+  color: var(--gray);
+}
+
+ul > li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }

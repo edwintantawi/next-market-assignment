@@ -1,5 +1,20 @@
 .container {
-	max-width: 1432px;
-	margin: 0 auto;
-	padding: 0 1rem;
+  max-width: 1432px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+.btn--fill {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.btn--outline {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
 }
