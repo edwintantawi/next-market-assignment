@@ -1,4 +1,4 @@
-# Team Project - NextMarket [MarketPlace Website] | DEV
+# Team Project - NextMarket [MarketPlace Website]
 
 Ini merupakan tugas wajib kelompok/tim Desain Web yang tujuannya adalah membuat web statis menggunakan HTML5 & CSS3. Tugas ini akan dipresentasikan oleh masing-masing tim diakhir perkuliahan mata kuliah Desain Web. Setiap tim boleh memilih salah satu dari beberapa topik dari web yang akan dibangun.
  
