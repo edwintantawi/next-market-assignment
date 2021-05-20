@@ -1,6 +1,10 @@
 main {
   height: 9999px;
 }
+
+section {
+  margin-bottom: 5rem;
+}
 nav {
   height: 70px;
   background-color: var(--light-gray);
@@ -105,6 +109,89 @@ nav {
 .shop__visit {
   width: 8rem;
   text-align: center;
+}
+
+.review__rating {
+  border: 1px solid var(--light-gray);
+  padding: 2rem 2rem 1.5rem 2rem;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: auto 0.9fr;
+  column-gap: 2rem;
+  max-width: 558px;
+}
+
+.review__rating-total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review__rating-total > img {
+  width: 2.8rem;
+  margin-right: 0.5rem;
+}
+
+.review__rating-total .current {
+  font-size: 2rem;
+  color: var(--black);
+  font-weight: var(--bold);
+}
+
+.review__rating-total .max {
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.progress__icon {
+  width: 1.4rem;
+}
+
+.progress__title {
+  font-weight: var(--semi-bold);
+  line-height: 0;
+  margin: 0 0.6rem 0 0.2rem;
+}
+
+.progress__indicator {
+  flex: 1;
+  height: 1rem;
+}
+.review__message {
+  margin-top: 2rem;
+}
+
+.message {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.message__profile {
+  display: flex;
+  align-items: flex-start;
+}
+
+.message__profile-image {
+  margin-right: 1rem;
+  width: 3rem;
+}
+.message__name {
+  font-size: 1rem;
+}
+.message__timestamp {
+  font-size: 0.8rem;
+}
+
+.message__review-star {
+  margin: 0.5rem 0;
 }
 
 .subtotal {

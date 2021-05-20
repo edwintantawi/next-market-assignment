@@ -10,6 +10,14 @@
     border-radius: 8px;
   }
 }
+@media screen and (min-width: 890px) {
+  .message {
+    grid-template-columns: 240px 1fr;
+  }
+  .message__review-star {
+    margin: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .product {
     display: grid;
