@@ -1,46 +1,647 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="src/styles/globals.css" />
-    <link rel="stylesheet" href="src/styles/responsive/globals.rwd.css" />
-    <link rel="stylesheet" href="src/styles/pages/home.css" />
-    <title>Next Market</title>
-  </head>
-  <body>
-    <div class="container">
-      <img src="src/assets/logo-icon.svg" alt="Next Market" />
-      <h1>Home Page</h1>
-      <h2>Next Market</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-        incidunt temporibus qui tempora cumque ut officiis in fuga assumenda,
-        praesentium dolores, dolor cupiditate quos hic veritatis omnis a unde
-        tenetur. Quidem, quas obcaecati distinctio veritatis ea eius aut
-        molestiae impedit voluptas vitae consequuntur saepe placeat suscipit
-        libero nesciunt esse neque enim, atque delectus doloribus modi
-        perferendis inventore earum et. Facilis? Accusantium nesciunt odit,
-        distinctio officia deserunt dolor ad fugiat rerum impedit explicabo
-        nostrum cupiditate architecto nam laudantium? Quo illo iste reiciendis
-        minus sed fuga tenetur, deserunt voluptatibus corrupti ea labore! Vel
-        ullam id consequuntur sint ducimus illum dolorem, minima laudantium
-        aliquam consequatur culpa. Illum, quia corrupti distinctio cum ea
-        cumque. Dignissimos voluptas sit eum assumenda at eius temporibus, esse
-        cumque! Ad velit facilis, expedita, beatae dolorem totam iusto quos
-        nobis fugit esse iure cumque eligendi temporibus, sit consequatur
-        officiis alias ratione quia delectus. Natus doloremque quos modi ut
-        eaque accusantium.
-      </p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="src/styles/globals.css" />
+  <link rel="stylesheet" href="src/styles/responsive/globals.rwd.css" />
+  <link rel="stylesheet" href="src/styles/pages/home.css" />
+  <title>Next Market</title>
+</head>
+
+<body>
+  <div class="container">
+    <!--start:banner-->
+    <div class="banner">
+      <img src="src/assets/images/banners/banner-1.png" alt="free shipping on your first order" class="banner__img">
+    </div>
+    <!--end:banner-->
+
+    <!--start:flash sale-->
+    <div class="fs__container">
+      <div class="fs__header">
+        <div class="fs__header__left">
+          <h1 class="fs__header__left__title">FLASH SALE</h1>
+          <span class="fs__header__left__time">
+            01
+          </span>
+          <span class="fs__header__left__time__separator">
+            :
+          </span>
+          <span class="fs__header__left__time">
+            01
+          </span>
+          <span class="fs__header__left__time__separator">
+            :
+          </span>
+          <span class="fs__header__left__time">
+            01
+          </span>
+        </div>
+        <div class="fs__header__right">
+          <img src="src/assets/brand/brand-1.svg" alt="SanDisk" class="fs_header__right__img">
+          <img src="src/assets/brand/brand-2.svg" alt="Nike" class="fs__header__right__img">
+          <img src="src/assets/brand/brand-3.svg" alt="Gucci" class="fs__header__right__img">
+          <img src="src/assets/brand/brand-4.svg" alt="Asus" class="fs__header__right__img">
+          <img src="src/assets/brand/brand-5.svg" alt="Levi's" class="fs__header__right__img">
+        </div>
+      </div>
+      <div class="all__product__horizontal">
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <span class="card__item__discount">50%</span>
+              <div class="card__item__price">
+                <p class="card__item__price__normal">$109.95</p>
+                <p class="card__item__price__hot">$54.957</p>
+              </div>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <span class="card__item__discount">50%</span>
+              <div class="card__item__price">
+                <p class="card__item__price__normal">$109.95</p>
+                <p class="card__item__price__hot">$54.957</p>
+              </div>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <span class="card__item__discount">50%</span>
+              <div class="card__item__price">
+                <p class="card__item__price__normal">$109.95</p>
+                <p class="card__item__price__hot">$54.957</p>
+              </div>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <span class="card__item__discount">50%</span>
+              <div class="card__item__price">
+                <p class="card__item__price__normal">$109.95</p>
+                <p class="card__item__price__hot">$54.957</p>
+              </div>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <span class="card__item__discount">50%</span>
+              <div class="card__item__price">
+                <p class="card__item__price__normal">$109.95</p>
+                <p class="card__item__price__hot">$54.957</p>
+              </div>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <span class="card__item__discount">50%</span>
+              <div class="card__item__price">
+                <p class="card__item__price__normal">$109.95</p>
+                <p class="card__item__price__hot">$54.957</p>
+              </div>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!--end: flash sale-->
+
+    <div class="all__product__vertical">
+      <div class="all__product__horizontal">
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="all__product__horizontal">
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="all__product__horizontal">
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card__item">
+            <div class="card__item__img__container">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__item__img__photo">
+            </div>
+            <div class="card__item__product">
+              <p class="card__item__price__hot">$54.957</p>
+              <h3 class="card__item__title">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </h3>
+              <div class="card__item__seller">
+                <img src="src/assets/icons/shop.svg" alt="icon shop" class="card__item__seller__icon">
+                <p class="card__item__seller__name">Toko Siapa</p>
+              </div>
+              <div class="card__item__info">
+                <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+                <p class="card__item__info__content">4.5</p>
+                <span class="card__item__info__content">|</span>
+                <p class="card__item__info__content">145 sold out</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
     <!-- Javascripts -->
     <script src="src/scripts/home.js" type="module"></script>
-  </body>
+</body>
+
 </html>
