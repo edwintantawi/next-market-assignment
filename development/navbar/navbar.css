@@ -32,11 +32,6 @@
   margin-top: 0.5rem;
 }
 
-.nav__search-icon {
-  width: 20px;
-  height: 20px;
-}
-
 .nav__search-input {
   flex: 1;
   height: 100%;
@@ -44,6 +39,16 @@
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+.nav__search-button {
+  cursor: pointer;
+  border: none;
+}
+
+.nav__search-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .nav__navigation {
@@ -94,6 +99,11 @@
 }
 
 .nav__auth-toggler {
+  display: flex;
+  align-items: center;
+}
+
+.nav__auth-toggler-icon {
   width: 32px;
   height: 32px;
   margin-left: 1rem;
@@ -107,7 +117,7 @@
   .nav__auth-action {
     display: flex;
   }
-  .nav__auth-toggler {
+  .nav__auth-toggler-icon {
     display: none;
   }
   .nav__auth-link {

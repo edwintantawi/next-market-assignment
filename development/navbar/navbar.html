@@ -21,18 +21,20 @@
           />
         </a>
         <!-- input search -->
-        <div class="nav__search">
+        <form class="nav__search">
           <input
             type="text"
             class="nav__search-input"
             placeholder="Search your need’s ..."
           />
-          <img
-            src="../../src/assets/icons/search.svg"
-            alt=""
-            class="nav__search-icon"
-          />
-        </div>
+          <button type="submit" class="nav__search-button">
+            <img
+              src="../../src/assets/icons/search.svg"
+              alt=""
+              class="nav__search-icon"
+            />
+          </button>
+        </form>
         <div class="nav__right">
           <!-- navigation -->
           <ul class="nav__navigation">
@@ -69,11 +71,13 @@
           </ul>
           <!-- auth cta -->
           <div class="nav__auth">
-            <img
-              src="../../src/assets/icons/user-avatar.svg"
-              alt=""
-              class="nav__auth-toggler"
-            />
+            <a href="#" class="nav__auth-toggler">
+              <img
+                src="../../src/assets/icons/user-avatar.svg"
+                alt=""
+                class="nav__auth-toggler-icon"
+              />
+            </a>
             <ul class="nav__auth-action">
               <li>
                 <a href="signup.html" class="btn btn--fill nav__auth-link">
