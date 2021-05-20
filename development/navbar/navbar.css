@@ -27,7 +27,7 @@
   width: 100%;
   background-color: #ececec;
   height: 44px;
-  padding: 8px 28px 8px 32px;
+  padding: 8px 1.75rem 8px 2rem;
   border-radius: 44px;
   margin-top: 0.5rem;
 }
@@ -40,6 +40,7 @@
 .nav__search-input {
   flex: 1;
   height: 100%;
+  width: 100%;
   background-color: transparent;
   border: none;
   outline: none;
