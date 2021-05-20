@@ -32,10 +32,7 @@
             </div>
             <div class="product__detail">
               <span class="product__detail-category">men's clothing</span>
-              <h1>
-                Fjallraven - Foldsack No. 1 Backpack Fjallraven - Foldsack No. 1
-                Backpack
-              </h1>
+              <h1>Fjallraven - Foldsack No. 1 Backpack</h1>
               <div class="stats">
                 <span class="stats__rating">
                   <img
@@ -45,10 +42,10 @@
                   />
                   <span>4.5</span>
                 </span>
-                <span>145 sold</span>
-                <span>312 stocks</span>
+                <span>1450 sold</span>
+                <span>200 stocks</span>
               </div>
-              <span class="product__detail-price">$108.85</span>
+              <span class="product__detail-price">$100.00</span>
               <h2>About This Product</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
@@ -242,10 +239,38 @@
             </div>
           </section>
           <!-- recomendation -->
-          <div class="recomendation"></div>
+          <section class="recomendation">
+            <h2>Recomendation's for you</h2>
+            <div class="recomendation__list">
+              <!-- product cart -->
+            </div>
+          </section>
         </div>
         <div class="container__right">
-          <div class="subtotal"></div>
+          <div class="subtotal">
+            <span class="subtotal__title">SubTotal</span>
+            <span class="subtotal__price" id="total-price">$100.00</span>
+
+            <div class="subtotal__counter">
+              <button class="handleChangeCounter">-</button>
+              <input type="text" value="1" id="counter" />
+              <button class="handleChangeCounter">+</button>
+              <span class="subtotal__stock">200 stock's</span>
+            </div>
+            <a href="#" class="btn btn--fill">Add to Cart</a>
+            <a href="#" class="btn btn--outline">Buy Now</a>
+            <div class="subtotal__utility">
+              <a href="#">
+                <img src="src/assets/icons/favorite.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="src/assets/icons/chat.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="src/assets/icons/share.svg" alt="" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -253,4 +278,33 @@
   </body>
   <!-- Javascripts -->
   <script src="src/scripts/detail.js" type="module"></script>
+  <script>
+    const stocks = 200;
+    const price = 100;
+    const handleChangeCounters = document.querySelectorAll(
+      '.handleChangeCounter'
+    );
+    const counterValue = document.getElementById('counter');
+    const totalPrice = document.getElementById('total-price');
+    const countTotalPrice = () => {
+      totalPrice.innerText = `$${(
+        parseFloat(price) * parseInt(counterValue.value)
+      ).toFixed(2)}`;
+    };
+    const handleChangeCounter = (event) => {
+      if (event.target.innerText === '+') {
+        if (counterValue.value >= stocks) return;
+        counterValue.value = parseInt(counterValue.value) + 1;
+      }
+      if (event.target.innerText === '-') {
+        if (counterValue.value <= 1) return;
+        counterValue.value = parseInt(counterValue.value) - 1;
+      }
+      countTotalPrice();
+    };
+    handleChangeCounters.forEach((handler) =>
+      handler.addEventListener('click', handleChangeCounter)
+    );
+    counterValue.addEventListener('change', countTotalPrice);
+  </script>
 </html>
