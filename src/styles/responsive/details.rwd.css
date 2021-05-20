@@ -1,0 +1,29 @@
+@media screen and (min-width: 780px) {
+  .container--grid {
+    grid-template-columns: 1fr 300px;
+  }
+  .subtotal {
+    position: sticky;
+    top: 110px;
+    border: 1px solid var(--light-gray);
+    height: 356px;
+    border-radius: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    column-gap: 52px;
+  }
+  .product__image {
+    height: 400px;
+    position: sticky;
+    top: 110px;
+    margin-bottom: 0;
+  }
+
+  .product__image-img {
+    height: 100%;
+  }
+}
