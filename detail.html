@@ -11,30 +11,83 @@
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="src/styles/globals.css" />
+    <link rel="stylesheet" href="src/styles/responsive/globals.rwd.css" />
     <link rel="stylesheet" href="src/styles/pages/detail.css" />
+    <link rel="stylesheet" href="src/styles/responsive/details.rwd.css" />
     <title>Next Market | Detail</title>
   </head>
   <body>
-    <h1>Detail Page</h1>
-    <h2>Next Market</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-      incidunt temporibus qui tempora cumque ut officiis in fuga assumenda,
-      praesentium dolores, dolor cupiditate quos hic veritatis omnis a unde
-      tenetur. Quidem, quas obcaecati distinctio veritatis ea eius aut molestiae
-      impedit voluptas vitae consequuntur saepe placeat suscipit libero nesciunt
-      esse neque enim, atque delectus doloribus modi perferendis inventore earum
-      et. Facilis? Accusantium nesciunt odit, distinctio officia deserunt dolor
-      ad fugiat rerum impedit explicabo nostrum cupiditate architecto nam
-      laudantium? Quo illo iste reiciendis minus sed fuga tenetur, deserunt
-      voluptatibus corrupti ea labore! Vel ullam id consequuntur sint ducimus
-      illum dolorem, minima laudantium aliquam consequatur culpa. Illum, quia
-      corrupti distinctio cum ea cumque. Dignissimos voluptas sit eum assumenda
-      at eius temporibus, esse cumque! Ad velit facilis, expedita, beatae
-      dolorem totam iusto quos nobis fugit esse iure cumque eligendi temporibus,
-      sit consequatur officiis alias ratione quia delectus. Natus doloremque
-      quos modi ut eaque accusantium.
-    </p>
+    <!-- nav : under development -->
+    <nav></nav>
+    <main class="detail">
+      <div class="container container--grid">
+        <div class="container__left">
+          <div class="product">
+            <div class="product__image">
+              <img
+                src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                alt=""
+                class="product__image-img"
+              />
+            </div>
+            <div class="product__detail">
+              <span class="product__detail-category">men's clothing</span>
+              <h1>
+                Fjallraven - Foldsack No. 1 Backpack Fjallraven - Foldsack No. 1
+                Backpack
+              </h1>
+              <div class="stats">
+                <span class="stats__rating">
+                  <img
+                    src="src/assets/icons/star.svg"
+                    alt=""
+                    class="stats__rating-icon"
+                  />
+                  <span>4.5</span>
+                </span>
+                <span>145 sold</span>
+                <span>312 stocks</span>
+              </div>
+              <span class="product__detail-price">$108.85</span>
+              <h2>About This Product</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                quibusdam eligendi molestiae vero consequuntur mollitia eveniet
+                nobis voluptatum quaerat assumenda delectus explicabo optio
+                iusto, voluptates, facilis sed. Sed, repellat ipsa! Odit quas
+                enim quaerat corporis tenetur consectetur consequuntur. Laborum
+                quasi mollitia accusamus quas, exercitationem obcaecati? Fugit
+                qui minus sequi similique fugiat nihil accusamus voluptatem
+                laborum ab, perferendis, eius sunt?
+              </p>
+
+              <div class="shop">
+                <div class="shop__info">
+                  <img
+                    src="src/assets/icons/shop-avatar.svg"
+                    alt=""
+                    class="shop__image"
+                  />
+                  <div class="shop__detail">
+                    <span class="shop__name">Toko apa aja</span>
+                    <span class="shop__location">Medan, sumatera utara</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn--fill shop__visit">Visit</a>
+              </div>
+            </div>
+          </div>
+          <!-- review -->
+          <div class="detail__review"></div>
+          <!-- recomendation -->
+          <div class="detail__recomendation"></div>
+        </div>
+        <div class="container__right">
+          <div class="subtotal"></div>
+        </div>
+      </div>
+    </main>
+    <!-- footer : under development -->
   </body>
   <!-- Javascripts -->
   <script src="src/scripts/detail.js" type="module"></script>
