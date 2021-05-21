@@ -33,11 +33,9 @@ const createProductCard = (product) =>
         </div>
         <div class="card__item__info">
           <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
-          <p class="card__item__info__content">${(
-            product.product_star.reduce(
-              (acumulator, current) => acumulator + current
-            ) / 5
-          ).toFixed(1)}</p>
+          <p class="card__item__info__content">
+          ${handleRatingArray(product.product_star)}
+          </p>
           <span class="card__item__info__content">|</span>
           <p class="card__item__info__content">${
             product.product_sold
