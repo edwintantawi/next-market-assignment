@@ -437,8 +437,7 @@ const PRODUCTS_DATA = [
   },
   {
     product_id: '16',
-    shop_name:
-      "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+    shop_name: 'james shop',
     shop_location: 'Pekalongan, Indonesia',
     product_picture: 'https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg',
     product_name:
@@ -561,5 +560,3 @@ const PRODUCTS_DATA = [
     ],
   },
 ];
-
-export default PRODUCTS_DATA;
