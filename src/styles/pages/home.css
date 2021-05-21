@@ -41,7 +41,7 @@
   padding: 7px 11px;
 }
 
-.fs_header__left__time__separator {
+.fs__header__left__time__separator {
   color: var(--white);
   margin: 0 10px;
 }
