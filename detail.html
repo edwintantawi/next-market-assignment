@@ -17,8 +17,90 @@
     <title>Next Market | Detail</title>
   </head>
   <body>
-    <!-- nav : under development -->
-    <nav></nav>
+    <nav class="nav">
+      <div class="container nav__wrapper">
+        <!-- logo -->
+        <a href="/">
+          <img
+            src="../../src/assets/logo-icon.svg"
+            alt="nextmarket"
+            class="nav__logo"
+          />
+        </a>
+        <!-- input search -->
+        <form class="nav__search">
+          <input
+            type="text"
+            class="nav__search-input"
+            placeholder="Search your need’s ..."
+          />
+          <button type="submit" class="nav__search-button">
+            <img
+              src="../../src/assets/icons/search.svg"
+              alt=""
+              class="nav__search-icon"
+            />
+          </button>
+        </form>
+        <div class="nav__right">
+          <!-- navigation -->
+          <ul class="nav__navigation">
+            <li>
+              <a href="/" class="nav__navigation-link">
+                <img
+                  src="../../src/assets/icons/home.svg"
+                  alt=""
+                  class="nav__navigation-icon"
+                />
+                <span class="nav__navigation-text">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav__navigation-link">
+                <img
+                  src="../../src/assets/icons/category.svg"
+                  alt=""
+                  class="nav__navigation-icon"
+                />
+                <span class="nav__navigation-text">Category</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav__navigation-link">
+                <img
+                  src="../../src/assets/icons/cart.svg"
+                  alt=""
+                  class="nav__navigation-icon"
+                />
+                <span class="nav__navigation-text">Cart</span>
+              </a>
+            </li>
+          </ul>
+          <!-- auth cta -->
+          <div class="nav__auth">
+            <a href="#" class="nav__auth-toggler">
+              <img
+                src="../../src/assets/icons/user-avatar.svg"
+                alt=""
+                class="nav__auth-toggler-icon"
+              />
+            </a>
+            <ul class="nav__auth-action">
+              <li>
+                <a href="signup.html" class="btn btn--fill nav__auth-link">
+                  Sign-Up
+                </a>
+              </li>
+              <li>
+                <a href="signin.html" class="btn btn--outline nav__auth-link">
+                  Sign-In
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
     <main class="detail">
       <div class="container container--grid">
         <div class="container__left">
@@ -54,6 +136,7 @@
     <!-- footer : under development -->
   </body>
   <!-- Javascripts -->
+  <script src="src/scripts/index.js"></script>
   <script src="src/scripts/utils/url-parser.js"></script>
   <script src="src/scripts/utils/rating-handler.js"></script>
   <script src="src/scripts/utils/pricing-utils.js"></script>
