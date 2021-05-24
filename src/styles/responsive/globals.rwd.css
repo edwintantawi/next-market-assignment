@@ -1,5 +1,48 @@
+@media screen and (min-width: 450px) {
+  .nav__auth-action {
+    position: unset;
+  }
+  .nav__auth-action {
+    display: flex;
+  }
+  .nav__auth-toggler-icon {
+    display: none;
+  }
+  .nav__auth-link {
+    margin-left: 1rem;
+    margin-bottom: 0;
+    width: auto;
+  }
+}
+@media screen and (min-width: 530px) {
+  .nav__navigation-link {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .nav__navigation-icon {
+    margin: 0 6px 0 0;
+  }
+  .nav__navigation-text {
+    display: inline;
+  }
+}
+
 @media screen and (min-width: 780px) {
-	html {
-		font-size: 16px;
-	}
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .nav__wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .nav__search {
+    flex: 1;
+    order: 0;
+    margin-top: 0;
+    margin-left: 1rem;
+  }
 }
