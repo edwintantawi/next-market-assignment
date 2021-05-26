@@ -58,8 +58,13 @@ section {
   margin-right: 0.4rem;
 }
 
+.product__pricing {
+  display: flex;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+
 .product__detail-price {
-  display: block;
   font-size: 2rem;
   font-weight: var(--bold);
   color: var(--blue);
@@ -67,8 +72,6 @@ section {
 }
 
 .product__detail-normal {
-  display: inline-block;
-  position: relative;
   font-weight: var(--semi-bold);
   font-size: 1.3rem;
   color: var(--gray);
@@ -76,13 +79,12 @@ section {
 }
 
 .product__detail-discount {
-  display: inline-block;
   background-color: var(--red);
   color: var(--white);
   padding: 0.2rem 0.8rem;
   font-size: 0.8rem;
   border-radius: 8px;
-  margin: 0.8rem 0.3rem 0 0;
+  margin-right: 0.6rem;
 }
 
 .shop {
