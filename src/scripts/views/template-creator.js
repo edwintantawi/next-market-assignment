@@ -69,7 +69,7 @@ const createDetailInfo = (product) =>
     </div>
     ${
       product.product_discount.percent !== 0
-        ? ` <span class="product__detail-discount">${product.product_discount.percent}%</span> <span class="product__detail-normal">$${product.product_price}</span>`
+        ? ` <div class="product__pricing"><span class="product__detail-discount">${product.product_discount.percent}%</span> <span class="product__detail-normal">$${product.product_price}</span></div>`
         : ''
     }
     <span class="product__detail-price">$${getProductPrice(product)}</span>
