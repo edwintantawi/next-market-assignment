@@ -1,46 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/styles/pages/auth.css">
-</head>
-
-<body>
-    <div class="all">
-        <img src="src/assets/logo-full.svg" alt="pict1" class="img1">
-
-        <div class="dis">
-            <img src="src/assets/images/illustration-auth.svg" alt="pict2" class="img2">
-            <form action="">
-                <h1 class="h1">Sign-Up</h1>
-                <div class="frm">
-                    <label for="name" class="nme">Your Name</label>
-                    <input type="text" class="name">
-                </div>
-                <div class="frm">
-                    <label for="email" class="eml">Email</label>
-                    <input type="email" name="email" class="email">
-                </div>
-                <div class="frm">
-                    <label for="password" class="pass">Password</label>
-                    <input type="password" name="password" class="passsword">
-                </div>
-                <div class="frm">
-                    <label for="reent" class="re_enter">Re-enter Password</label>
-                    <input type="password" name="password" class="password2">
-                </div>
-                <div class="frm">
-                    <a href=""> <button>Create Your Account</button></a>
-                </div>
-                <p class="paragraph">Already Have Account? <a href="">Sign-in</a></p>
-            </form>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextMarket | Sign-Up</title>
+    <link rel="stylesheet" href="src/styles/globals.css" />
+    <link rel="stylesheet" href="src/styles/responsive/globals.rwd.css" />
+    <link rel="stylesheet" href="src/styles/pages/auth.css" />
+  </head>
+  <body>
+    <header class="auth__header">
+      <a href="/">
+        <img src="src/assets/logo-full.svg" alt="NextMarket" />
+      </a>
+    </header>
+    <main class="auth__main">
+      <div class="auth__container">
+        <div class="auth__main__left">
+          <img src="src/assets/images/illustration-auth.svg" alt="" />
         </div>
-    </div>
-</body>
+        <div class="auth__main__right">
+          <form>
+            <h2>Sign-Up</h2>
+            <div class="auth__input">
+              <input type="text" id="name" required />
+              <label for="name">Your Name</label>
+            </div>
+            <div class="auth__input">
+              <input type="email" id="email" required />
+              <label for="email">Email</label>
+            </div>
+            <div class="auth__input">
+              <div class="auth__input__wrapper">
+                <img
+                  src="src/assets/icons/show-pass.svg"
+                  alt="password toggler"
+                  class="password-toggler"
+                />
+                <input type="password" id="password" required />
+              </div>
+              <label for="password">Password</label>
+            </div>
+            <div class="auth__input">
+              <div class="auth__input__wrapper">
+                <img
+                  src="src/assets/icons/show-pass.svg"
+                  alt="password toggler"
+                  class="password-toggler"
+                />
+                <input type="password" id="repassword" required />
+              </div>
+              <label for="repassword">Re-enter Password</label>
+            </div>
+            <div class="auth__input__submit">
+              <button class="btn btn--fill">Create your Account</button>
+              <span>
+                already have an account?
+                <a href="signin.html">Sign-In</a>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
 
+    <script>
+      const passwordTooglers = document.querySelectorAll('.password-toggler');
+
+      passwordTooglers.forEach((toggler) => {
+        toggler.addEventListener('click', () => {
+          if (
+            toggler.getAttribute('src') === 'src/assets/icons/hide-pass.svg'
+          ) {
+            toggler.setAttribute('src', 'src/assets/icons/show-pass.svg');
+            toggler.nextElementSibling.setAttribute('type', 'password');
+          } else {
+            toggler.setAttribute('src', 'src/assets/icons/hide-pass.svg');
+            toggler.nextElementSibling.setAttribute('type', 'text');
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
