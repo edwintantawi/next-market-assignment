@@ -104,6 +104,7 @@ a {
 .nav__search-button {
   cursor: pointer;
   border: none;
+  background-color: transparent;
 }
 
 .nav__search-icon {
