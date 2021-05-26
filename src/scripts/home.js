@@ -7,6 +7,31 @@ Products.getNormalProducts().forEach((product) => {
     createProductCard(product);
 });
 
+const timer = document.querySelectorAll('.fs__header__left__time');
+
+const fsCounter = (until) => {
+  const untilTime = new Date(until).getTime();
+
+  setInterval(() => {
+    const nowTime = new Date().getTime();
+
+    const distance = untilTime - nowTime;
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    timer[0].innerText = `0${days}`.slice(-2);
+    timer[1].innerText = `0${hours}`.slice(-2);
+    timer[2].innerText = `0${minutes}`.slice(-2);
+    timer[3].innerText = `0${seconds}`.slice(-2);
+  }, 1000);
+};
+
+fsCounter('6/1/2021');
+
 {
   /* <a href="#">
   `<div class="card__item">
