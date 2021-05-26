@@ -1,3 +1,9 @@
+@media screen and (min-width: 386px) {
+  .review__rating {
+    grid-template-columns: auto 0.9fr;
+    column-gap: 2rem;
+  }
+}
 @media screen and (min-width: 845px) {
   .container--grid {
     grid-template-columns: 1fr 320px;

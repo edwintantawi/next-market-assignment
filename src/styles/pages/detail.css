@@ -130,8 +130,8 @@ section {
   margin: 1rem 0 1rem;
   border-radius: 8px;
   display: grid;
-  grid-template-columns: auto 0.9fr;
-  column-gap: 2rem;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
   max-width: 558px;
 }
 
@@ -171,10 +171,15 @@ section {
   font-weight: var(--semi-bold);
   line-height: 0;
   margin: 0 0.6rem 0 0.2rem;
+  display: block;
+  min-width: 1rem;
 }
 
 .progress__title--count {
   margin-left: 0.5rem;
+  display: block;
+  min-width: 1.3rem;
+  text-align: right;
 }
 
 .progress__indicator {
