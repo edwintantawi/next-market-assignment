@@ -14,9 +14,25 @@
     display: inline;
   }
 }
-@media screen and (min-width: 406px) {
+@media screen and (min-width: 407px) {
+  .fs__container {
+    margin: 0.8rem 0 30px;
+  }
+  .fs__header {
+    padding: 1rem 2.5rem;
+  }
   .fs__header__timer {
     margin-top: 0;
+  }
+  .fs__header__left {
+    align-items: center;
+    flex-direction: row;
+  }
+  .fs__header__left__title {
+    margin-right: 1.5rem;
+  }
+  .fs__header {
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 1064px) {

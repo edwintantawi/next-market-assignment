@@ -9,8 +9,8 @@
 
 .fs__container {
   width: 100%;
-  border-bottom: 1px solid var(--gray);
-  margin: 1.125rem 0 30px;
+  border-bottom: 1px solid var(--light-gray);
+  margin: 0.5rem 0 30px;
 }
 
 .fs__header {
@@ -18,16 +18,16 @@
   background-color: var(--blue);
   border-radius: 10px;
   box-sizing: border-box;
-  /* padding:16px 0 16px 40px; */
-  padding: 1rem 2.5rem;
+  padding: 1.5rem;
   justify-content: space-between;
-  margin: 0 0 30px 0;
+  margin-bottom: 1.875rem;
+  flex-direction: column;
 }
 
 .fs__header__left {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 
@@ -35,7 +35,8 @@
   font-weight: var(--regular);
   font-size: 1rem;
   color: var(--white);
-  margin:0 24px 0 0;
+  margin:0;
+  font-weight: var(--semi-bold);
 }
 .fs__header__timer{
   display: flex;
@@ -89,7 +90,7 @@
   width: 100%;
   height: 100%;
   padding:17px;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--light-gray);
   border-bottom: 10px solid var(--blue);
   border-radius: 10px;
   /* margin: 0 0 30px 0; */
