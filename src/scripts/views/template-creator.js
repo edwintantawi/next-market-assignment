@@ -29,11 +29,13 @@ const createProductCard = (product) =>
           <p class="card__item__seller__name">${product.shop_name}</p>
         </div>
         <div class="card__item__info">
-          <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
-          <p class="card__item__info__content">
-          ${handleRatingArray(product.product_star)}
-          </p>
-          <span class="card__item__info__content">|</span>
+          <span class="card__item__info__star__wrapper">
+            <img src="src/assets/icons/star.svg" alt="star" class="card__item__info__star">
+            <p class="card__item__info__content">
+              ${handleRatingArray(product.product_star)}
+            </p>
+          </span>
+          <span class="card__item__info__content card__item__info__content--separator">|</span>
           <p class="card__item__info__content">${
             product.product_sold
           } sold out</p>
