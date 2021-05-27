@@ -1,6 +1,5 @@
 const productId = urlParser('id');
 const product = Products.getProductById(productId);
-console.info(product);
 if (!product) window.location.replace('/');
 
 document.getElementById('product-info').innerHTML = createDetailInfo(product);
@@ -13,6 +12,11 @@ document.getElementById('review-message').innerHTML =
 const handleChangeCounters = document.querySelectorAll('.handleChangeCounter');
 const counterValue = document.getElementById('counter');
 const totalPrice = document.getElementById('total-price');
+const recomendationList = document.getElementById('recomendation-list');
+
+Products.getRecomendationByCategory(product.product_category).forEach(
+  (product) => (recomendationList.innerHTML += createProductCard(product))
+);
 
 const countTotalPrice = () => {
   totalPrice.innerText = `$${(
