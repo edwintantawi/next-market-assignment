@@ -34,7 +34,7 @@
 
 .fs__header__left__title {
   font-weight: var(--regular);
-  font-size: 1rem;
+  font-size: 16px;
   color: var(--white);
   margin:0;
   font-weight: var(--semi-bold);
