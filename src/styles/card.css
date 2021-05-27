@@ -8,6 +8,7 @@
   border: 1px solid var(--light-gray);
   border-bottom: 10px solid var(--blue);
   border-radius: 10px;
+  justify-content: space-between;
 }
 
 .card__item__img__container {
