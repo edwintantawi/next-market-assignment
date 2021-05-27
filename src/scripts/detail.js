@@ -6,8 +6,13 @@ document.getElementById('product-info').innerHTML = createDetailInfo(product);
 document.getElementById('subtotal').innerHTML = createSubTotal(product);
 document.getElementById('review-rating').innerHTML =
   createReviewRating(product);
-document.getElementById('review-message').innerHTML =
-  createReviewMessage(product);
+document.getElementById('review-message').innerHTML = createReviewMessage(
+  product
+).trim()
+  ? createReviewMessage(product)
+  : "<p class='noreview'>there doesn't seem to be a review here</p>";
+
+console.info(Boolean(createReviewMessage(product).trim()));
 
 const handleChangeCounters = document.querySelectorAll('.handleChangeCounter');
 const counterValue = document.getElementById('counter');
