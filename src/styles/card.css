@@ -6,7 +6,7 @@
   height: 100%;
   padding: 17px 1rem;
   border: 1px solid var(--light-gray);
-  border-bottom: 10px solid var(--blue);
+  border-bottom: 0.625rem solid var(--blue);
   border-radius: 10px;
   justify-content: space-between;
 }
@@ -69,7 +69,7 @@
 .card__item__seller {
   display: flex;
   align-items: center;
-  margin: 8px 0;
+  margin: 0.8rem 0 0.2rem;
 }
 
 .card__item__seller__icon {
@@ -106,7 +106,7 @@
 .card__item__info__content {
   font-size: 12px;
   font-weight: var(--regular);
-  margin: 3px 5px 0 0;
+  margin: 0 5px 0 0;
 }
 
 @media screen and (min-width: 500px) {
