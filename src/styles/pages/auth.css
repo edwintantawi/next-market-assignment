@@ -4,12 +4,16 @@ body {
 
 .auth__main {
   height: 100vh;
-  padding-top: 7.5rem;
+  padding-top: 7rem;
+}
+
+.auth__main > div {
+  width: 100%;
 }
 
 .auth__header {
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 0 0.5rem;
   position: fixed;
   width: 100%;
   background-color: var(--white);
@@ -103,6 +107,11 @@ form h2 {
 }
 
 @media screen and (min-width: 900px) {
+  .auth__main {
+    padding-top: 4.8rem;
+    display: flex;
+    align-items: center;
+  }
   .auth__container {
     grid-template-columns: repeat(2, 1fr);
   }
