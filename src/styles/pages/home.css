@@ -47,6 +47,8 @@
 
 .fs__header__left__time {
   background-color: var(--white);
+  color: var(--black);
+  font-weight: var(--semi-bold);
   border-radius: 10px;
   display: grid;
   place-items: center;
@@ -58,6 +60,7 @@
 
 .fs__header__left__time__separator {
   color: var(--white);
+  font-weight: var(--bold);
   margin: 0 10px;
 } 
 
