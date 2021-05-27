@@ -4,6 +4,11 @@
     column-gap: 2rem;
   }
 }
+@media screen and (min-width: 500px) {
+  .recomendation__list {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
 @media screen and (min-width: 845px) {
   .container--grid {
     grid-template-columns: 1fr 320px;
