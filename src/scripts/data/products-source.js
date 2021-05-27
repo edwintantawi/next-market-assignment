@@ -28,4 +28,12 @@ class Products {
     );
     return filteredProductByCategory;
   }
+
+  static getProductsBySearch(query) {
+    const filteredProductByQuery = PRODUCTS_DATA.filter((product) => {
+      const productName = product.product_name.toLowerCase();
+      return productName.includes(query.toLowerCase());
+    });
+    return filteredProductByQuery;
+  }
 }
