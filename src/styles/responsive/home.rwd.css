@@ -2,17 +2,6 @@
   .all__product__horizontal {
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   }
-
-  .card__item__info {
-    flex-direction: row;
-  }
-  .card__item__img__photo {
-    height: 170px;
-  }
-
-  .card__item__info__content--separator {
-    display: inline;
-  }
 }
 @media screen and (min-width: 407px) {
   .fs__container {
