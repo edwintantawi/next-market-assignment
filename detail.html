@@ -28,11 +28,17 @@
           />
         </a>
         <!-- input search -->
-        <form class="nav__search">
+        <form
+          class="nav__search"
+          id="search-form"
+          method="GET"
+          action="search.html"
+        >
           <input
             type="text"
             class="nav__search-input"
             placeholder="Search your need’s ..."
+            name="q"
           />
           <button type="submit" class="nav__search-button">
             <img
