@@ -75,9 +75,11 @@ a {
   display: flex;
   align-items: center;
 }
-
+.nav__logo-link {
+  display: flex;
+}
 .nav__logo {
-  height: 2.5rem;
+  height: 2rem;
 }
 
 .nav__search {
