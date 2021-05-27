@@ -77,6 +77,7 @@ a {
 }
 .nav__logo-link {
   display: flex;
+  justify-content: center;
 }
 .nav__logo {
   height: 2rem;
