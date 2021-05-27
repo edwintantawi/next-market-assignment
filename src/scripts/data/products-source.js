@@ -21,4 +21,11 @@ class Products {
     );
     return filteredProductById;
   }
+
+  static getRecomendationByCategory(category) {
+    const filteredProductByCategory = PRODUCTS_DATA.filter(
+      (product) => product.product_category === category
+    );
+    return filteredProductByCategory;
+  }
 }
