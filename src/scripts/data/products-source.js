@@ -30,9 +30,18 @@ class Products {
   }
 
   static getProductsBySearch(query) {
+    const userQuery = query.toLowerCase();
     const filteredProductByQuery = PRODUCTS_DATA.filter((product) => {
       const productName = product.product_name.toLowerCase();
-      return productName.includes(query.toLowerCase());
+      const productCategory = product.product_category.toLowerCase();
+      const productShop = product.shop_name.toLowerCase();
+      if (
+        productName.includes(userQuery) ||
+        productCategory.includes(userQuery) ||
+        productShop.includes(userQuery)
+      ) {
+        return true;
+      }
     });
     return filteredProductByQuery;
   }
