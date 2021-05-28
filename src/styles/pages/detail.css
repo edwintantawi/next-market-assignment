@@ -83,7 +83,7 @@ section {
 .product__detail-discount {
   background-color: var(--red);
   color: var(--white);
-  padding: 0.2rem 0.8rem;
+  padding: 5px 10px;
   font-size: 0.8rem;
   border-radius: 3px;
   margin-right: 0.6rem;
