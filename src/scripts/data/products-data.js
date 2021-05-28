@@ -154,7 +154,7 @@ const PRODUCTS_DATA = [
       },
       {
         review_name: 'heri',
-        review_timestamp: '2021-01-11T15:18:12.352Z',
+        review_timestamp: '2021-11-11T15:18:12.352Z',
         review_star: 1,
         review_content:
           'produk sangat tidak bagus, harga cukup murah karena flashsale',
@@ -293,7 +293,7 @@ const PRODUCTS_DATA = [
       },
       {
         review_name: 'olai',
-        review_timestamp: '2021-01-12T15:18:16.352Z',
+        review_timestamp: '2021-11-12T15:18:16.352Z',
         review_star: 5,
         review_content: 'luar biasa, sangat bagus',
       },
@@ -368,7 +368,7 @@ const PRODUCTS_DATA = [
     product_review: [
       {
         review_name: 'Jess No Limit',
-        review_timestamp: '2021-01-12T15:12:12.352Z',
+        review_timestamp: '2021-09-12T15:12:12.352Z',
         review_star: 5,
         review_content: 'Produk yang bagus dari acer, sukses selalu...',
       },
@@ -395,21 +395,21 @@ const PRODUCTS_DATA = [
     product_review: [
       {
         review_name: 'Enjay',
-        review_timestamp: '2021-02-12T15:10:11.352Z',
+        review_timestamp: '2021-06-12T15:10:11.352Z',
         review_star: 5,
         review_content:
           'Barang sangat bagus untuk menunjang pekerjaan saya sebagai Android developer',
       },
       {
         review_name: 'Diki',
-        review_timestamp: '2021-02-12T15:05:11.352Z',
+        review_timestamp: '2020-03-10T15:05:11.352Z',
         review_star: 4,
         review_content:
           'saya suka dengan monitor ini karena ukuran yang cukup memenuhi kebutuhan saya',
       },
       {
         review_name: 'Asep',
-        review_timestamp: '2021-02-12T15:01:05.352Z',
+        review_timestamp: '2021-09-08T15:01:05.352Z',
         review_star: 1,
         review_content:
           'Produk yang saya dapat terdapat cacat, mungkin karena saat pengiriman, semoga kedepannya bisa di kondisikan',
@@ -456,13 +456,13 @@ const PRODUCTS_DATA = [
     product_review: [
       {
         review_name: 'Andrew',
-        review_timestamp: '2021-02-12T15:10:16.352Z',
+        review_timestamp: '2021-08-02T15:10:16.352Z',
         review_star: 4,
         review_content: 'Bahan pakainnya sangat nyaman dan sejuk...',
       },
       {
         review_name: 'Kenny',
-        review_timestamp: '2021-02-12T15:09:12.352Z',
+        review_timestamp: '2021-03-10T15:09:12.352Z',
         review_star: 5,
         review_content: 'Sangat enak di pakai buat jalan jalan...',
       },
@@ -489,7 +489,7 @@ const PRODUCTS_DATA = [
     product_review: [
       {
         review_name: 'josua',
-        review_timestamp: '2021-02-12T15:01:10.352Z',
+        review_timestamp: '2021-11-08T15:01:10.352Z',
         review_star: 5,
         review_content: 'Pacar saya sangat suka dengna produk ini',
       },
@@ -553,9 +553,117 @@ const PRODUCTS_DATA = [
     product_review: [
       {
         review_name: 'Laped',
-        review_timestamp: '2021-02-12T15:11:10.352Z',
+        review_timestamp: '2021-04-11T15:11:10.352Z',
         review_star: 4,
         review_content: 'Barang bagus hanya saja respon seller agak lamban...',
+      },
+    ],
+  },
+  {
+    product_id: '21',
+    shop_name: 'Msi Official',
+    shop_location: 'Jakarta, Indonesia',
+    product_picture:
+      'https://asset.msi.com/resize/image/global/product/product_1619140661a4e9ef11887732ab3e8bb00b310e0b8a.png62405b38c58fe0f07fcef2367d8a9ba1/1000.png',
+    product_name: 'Laptop MSI Sword 15, Core i7 11th, RTX 3050TI',
+    product_price: 820.12,
+    product_category: 'electronics',
+    product_discount: {
+      type: null,
+      percent: 0,
+    },
+    product_star: [0, 0, 0, 2, 3],
+    product_sold: 12,
+    product_stock: 31,
+    product_description:
+      'Up to latest 11th Gen. Intel® Core™ i7 processor Windows 10 Home Up to latest NVIDIA® GeForce RTX™ 3050 TI Laptop GPU 4GB GDDR6 15.6" Full HD (1920x1080), 144Hz Refresh Rate, IPS-Level panel Thin bezel design Exclusive Cooler Boost 5 Technology MSI Center with exclusive gaming mode MSI App Player for seamless gaming experience between mobile and PC High-Resolution Audio ready Gaming keyboard with numpad',
+    product_review: [
+      {
+        review_name: 'Yanyang',
+        review_timestamp: '2021-11-05T15:11:10.352Z',
+        review_star: 5,
+        review_content: 'Sangat memuaskan, design juga keren ...',
+      },
+    ],
+  },
+  {
+    product_id: '22',
+    shop_name: 'Xiaomi Official',
+    shop_location: 'Surabaya, Indonesia',
+    product_picture:
+      'https://i01.appmifile.com/webfile/globalimg/0320/TO-B/800/mi-11-lite-black-png.png',
+    product_name: 'Xiaomi mi 11 lite, black',
+    product_price: 21.0,
+    product_category: 'electronics',
+    product_discount: {
+      type: null,
+      percent: 0,
+    },
+    product_star: [0, 0, 2, 4, 11],
+    product_sold: 24,
+    product_stock: 63,
+    product_description:
+      'Super thin design, exquisite craftsmanship. Curved side fingerprint sensor The fingerprint sensor has been seamlessly integrated into the slim unlocking button, offering a smoother unlocking experience. Near-flat camera module The camera module only protrudes 1.77mm from the rest of the body, making for a compact and well-balanced look and feel. 6.55" AMOLED DotDisplay Enjoy watching videos and playing games on the clear AMOLED display1.88mm slim bezels Symmetrical and super slim side and top bezels with a width of mere 1.88mm, making room for more visuals.',
+    product_review: [
+      {
+        review_name: 'joko',
+        review_timestamp: '2020-11-07T15:10:12.352Z',
+        review_star: 4,
+        review_content: 'barang bagua, harga juga terjangkau ...',
+      },
+      {
+        review_name: 'lini',
+        review_timestamp: '2021-10-11T15:12:11.352Z',
+        review_star: 5,
+        review_content: 'wah sangat keren, sesuai expetasi ...',
+      },
+    ],
+  },
+  {
+    product_id: '23',
+    shop_name: 'Sephora',
+    shop_location: 'Medan, Indonesia',
+    product_picture:
+      'https://www.sephora.com/productimages/sku/s2456275-main-zoom.jpg',
+    product_name: 'Dior Addict Lip Glow',
+    product_price: 35.0,
+    product_category: 'makeup',
+    product_discount: {
+      type: null,
+      percent: 0,
+    },
+    product_star: [0, 0, 0, 1, 3],
+    product_sold: 9,
+    product_stock: 17,
+    product_description:
+      'An iconic Dior lip balm with 97 percent natural-origin ingredients that awakens the natural color of lips with a custom glow and up to 24 hours of hydration. Lip Balm & Treatment Hydrating, Long-wearing, Plumping',
+    product_review: [],
+  },
+  {
+    product_id: '24',
+    shop_name: 'Sephora',
+    shop_location: 'Medan, Indonesia',
+    product_picture:
+      'https://www.sephora.com/productimages/sku/s870618-main-zoom.jpg',
+    product_name: 'Translucent Loose Setting Powder',
+    product_price: 39.0,
+    product_category: 'makeup',
+    product_discount: {
+      type: null,
+      percent: 0,
+    },
+    product_star: [0, 0, 1, 3, 8],
+    product_sold: 18,
+    product_stock: 24,
+    product_description:
+      'A lightweight, easy-to-apply, loose powder that blends effortlessly to set makeup for up to 16 hours of wear. This award-winning powder locks in makeup for long-lasting wear without adding weight or texture. It absorbs oil and reduces shine all day, creating a flawless, matte finish with no flashback in photos. These truly-translucent shades work on all skin tones, and create a soft-focus effect to subtly blur fine lines and imperfections. Translucent is perfect for fair to medium and tan skin tones. Translucent Medium Deep is perfect for medium-deep to deep skin tones.',
+    product_review: [
+      {
+        review_name: 'dini',
+        review_timestamp: '2021-03-10T15:12:11.352Z',
+        review_star: 5,
+        review_content:
+          'wah sangat bagus, sangat nyaman di pakai dan warnanya sangat cocok ...',
       },
     ],
   },
