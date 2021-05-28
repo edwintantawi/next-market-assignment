@@ -3,7 +3,7 @@
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   }
 }
-@media screen and (min-width: 407px) {
+@media screen and (min-width: 425px) {
   .fs__container {
     margin: 0.8rem 0 30px;
   }
@@ -24,7 +24,12 @@
     flex-direction: row;
   }
 }
-@media screen and (min-width: 1064px) {
+@media screen and (min-width: 780px) {
+  .fs__header {
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 1076px) {
   .fs__header__right {
     display: flex;
   }

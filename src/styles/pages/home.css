@@ -17,8 +17,7 @@
 .fs__header {
   display: flex;
   background-color: var(--blue);
-  border-radius: 10px;
-  box-sizing: border-box;
+  border-radius: 4px;
   padding: 1.5rem;
   justify-content: space-between;
   margin-bottom: 1.875rem;
@@ -66,11 +65,9 @@
 
 .fs__header__right {
   display: none;
-  /* justify-content: space-around; */
 }
 
 .fs__header__right__img {
-  /* width: 100%; */
   margin-left: 2.5rem;
 }
 
