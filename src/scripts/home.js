@@ -30,7 +30,7 @@ const fsCounter = (until) => {
   }, 1000);
 };
 
-fsCounter('6/1/2021');
+fsCounter('2/1/2021');
 
 {
   /* <a href="#">
