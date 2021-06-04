@@ -54,6 +54,10 @@ a {
   text-decoration: none;
 }
 
+main {
+  margin-bottom: 100px;
+}
+
 /* navbar */
 .nav {
   padding: 0.75rem 0;
@@ -171,4 +175,45 @@ a {
   height: 32px;
   margin-left: 1rem;
   cursor: pointer;
+}
+
+.footer {
+  background-color: var(--blue);
+}
+.all {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 50px;
+  row-gap: 50px;
+  padding: 50px 1rem;
+  width: 100%;
+}
+.search-img {
+  display: none;
+}
+
+.market-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.market-image img {
+  width: 200px;
+}
+.paragraph {
+  color: #b7dcff;
+  margin-top: 1rem;
+}
+footer ul {
+  color: #ffff;
+  font-size: 18px;
+}
+footer li {
+  list-style: none;
+  font-size: 14px;
+  padding-top: 10px;
+}
+footer a {
+  color: #b7dcff;
+  text-decoration: none;
 }
