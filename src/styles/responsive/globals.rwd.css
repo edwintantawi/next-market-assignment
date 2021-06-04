@@ -49,3 +49,17 @@
     margin-left: 1rem;
   }
 }
+
+@media screen and (min-width: 810px) {
+  .all {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .all {
+    grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  }
+  .search-img {
+    display: block;
+  }
+}
