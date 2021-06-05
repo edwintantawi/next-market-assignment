@@ -1,4 +1,4 @@
-const createProductCard = (product) =>
+const createProductCard = (product, index) =>
   `
   <a href="detail.html?id=${product.product_id}">
     <div class="card__item">
@@ -39,6 +39,11 @@ const createProductCard = (product) =>
           <p class="card__item__info__content">${
             product.product_sold
           } sold out</p>
+        </div>
+        <div class="trash">
+          <div id="trash" data-index="${index}" class="trashButtons">
+            <img src="src/assets/icons/trash.svg"/>
+          </div>
         </div>
       </div>
     </div>
@@ -111,7 +116,7 @@ const createSubTotal = ({ product_price, product_discount, product_stock }) =>
       <button class="handleChangeCounter">+</button>
       <span class="subtotal__stock">${product_stock} stock's</span>
     </div>
-    <a href="#" class="btn btn--fill">Add to Cart</a>
+    <a href="#" class="btn btn--fill" id="add-to-cart">Add to Cart</a>
     <a href="#" class="btn btn--outline">Buy Now</a>
     <div class="subtotal__utility">
       <a href="#">
