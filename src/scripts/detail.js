@@ -12,12 +12,22 @@ document.getElementById('review-message').innerHTML = createReviewMessage(
   ? createReviewMessage(product)
   : "<p class='noreview'>there doesn't seem to be a review here</p>";
 
-console.info(Boolean(createReviewMessage(product).trim()));
-
 const handleChangeCounters = document.querySelectorAll('.handleChangeCounter');
 const counterValue = document.getElementById('counter');
 const totalPrice = document.getElementById('total-price');
 const recomendationList = document.getElementById('recomendation-list');
+const addToCartButton = document.getElementById('add-to-cart');
+
+addToCartButton.addEventListener('click', () => {
+  console.info('clicked');
+  for (let i = 0; i < parseInt(counterValue.value); i++) {
+    const prev = JSON.parse(localStorage.getItem('CART_PRODUCT_ID'));
+    localStorage.setItem(
+      'CART_PRODUCT_ID',
+      JSON.stringify([...prev, product.product_id])
+    );
+  }
+});
 
 Products.getRecomendationByCategory(product.product_category).forEach(
   (product) => (recomendationList.innerHTML += createProductCard(product))
