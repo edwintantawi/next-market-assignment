@@ -31,9 +31,12 @@
   }
 }
 
-@media screen and (min-width: 846px) {
+@media screen and (min-width: 845px) {
   html {
     font-size: 16px;
+  }
+  .footer {
+    padding-bottom: 0;
   }
 }
 

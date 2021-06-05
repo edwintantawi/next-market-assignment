@@ -184,6 +184,7 @@ main {
 
 .footer {
   background-color: var(--blue);
+  padding-bottom: 5rem;
 }
 .all {
   display: grid;
