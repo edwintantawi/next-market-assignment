@@ -57,6 +57,11 @@ a {
 main {
   margin-bottom: 100px;
 }
+.noreview {
+  margin-top: 2rem;
+  padding: 1.8rem;
+  border: 1px dashed var(--light-gray);
+}
 
 /* navbar */
 .nav {

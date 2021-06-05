@@ -219,12 +219,6 @@ section {
   width: 1.5rem;
 }
 
-.noreview {
-  margin-top: 2rem;
-  padding: 1.8rem;
-  border: 1px dashed var(--light-gray);
-}
-
 .recomendation__list {
   margin-top: 1.2rem;
   display: grid;
