@@ -1,0 +1,83 @@
+@import '../card.css';
+.banner {
+  margin-top:1rem;
+}
+
+.banner__img {
+  width: 100%;
+  height: auto;
+}
+
+.fs__container {
+  width: 100%;
+  border-bottom: 1px solid var(--light-gray);
+  margin: 0.5rem 0 30px;
+}
+
+.fs__header {
+  display: flex;
+  background-color: var(--blue);
+  border-radius: 4px;
+  padding: 1.5rem;
+  justify-content: space-between;
+  margin-bottom: 1.875rem;
+  flex-direction: column;
+}
+
+.fs__header__left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.fs__header__left__title {
+  font-weight: var(--regular);
+  font-size: 16px;
+  color: var(--white);
+  margin:0;
+  font-weight: var(--semi-bold);
+}
+.fs__header__timer{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.fs__header__left__time {
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: var(--semi-bold);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  min-width: 2.8rem;
+  height: 2.8rem;
+  line-height: 2.5;
+}
+
+.fs__header__left__time__separator {
+  color: var(--white);
+  font-weight: var(--bold);
+  margin: 0 10px;
+} 
+
+.fs__header__right {
+  display: none;
+}
+
+.fs__header__right__img {
+  margin-left: 2.5rem;
+}
+
+.all__product__horizontal {
+  display: flex;
+}
+
+.all__product__horizontal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 30px;
+}

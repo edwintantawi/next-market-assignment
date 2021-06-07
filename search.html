@@ -12,17 +12,19 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="src/styles/globals.css" />
     <link rel="stylesheet" href="src/styles/responsive/globals.rwd.css" />
-    <link rel="stylesheet" href="src/styles/pages/detail.css" />
-    <link rel="stylesheet" href="src/styles/responsive/details.rwd.css" />
-    <title>Next Market | Detail</title>
+    <link rel="stylesheet" href="src/styles/pages/home.css" />
+    <link rel="stylesheet" href="src/styles/pages/search.css" />
+    <link rel="stylesheet" href="src/styles/responsive/home.rwd.css" />
+    <title>Next Market</title>
   </head>
+
   <body>
     <nav class="nav">
       <div class="container nav__wrapper">
         <!-- logo -->
         <a href="index.html" class="nav__logo-link">
           <img
-            src="src/assets/logo-icon.svg"
+            src="src/assets/icons/back.svg"
             alt="nextmarket"
             class="nav__logo"
           />
@@ -107,38 +109,21 @@
         </div>
       </div>
     </nav>
-    <main class="detail">
-      <div class="container container--grid">
-        <div class="container__left">
-          <section class="product" id="product-info">
-            <!-- render in js -->
-          </section>
-          <!-- review -->
-          <section class="review">
-            <h2>Rewiew’s</h2>
-            <div class="review__rating" id="review-rating">
-              <!-- render in js -->
-            </div>
-
-            <div class="review__message" id="review-message">
-              <!-- render in js -->
-            </div>
-          </section>
-          <!-- recomendation -->
-          <section class="recomendation">
-            <h2>Recomendation's for you</h2>
-            <div class="recomendation__list" id="recomendation-list">
-              <!-- product cart -->
-            </div>
-          </section>
+    <div class="full-screen">
+      <header>
+        <div class="container search__title">
+          <h1>Search Results :</h1>
         </div>
-        <div class="container__right">
-          <div class="subtotal" id="subtotal">
+      </header>
+      <div class="container">
+        <div class="all__product__vertical">
+          <div class="all__product__horizontal" id="search-container">
             <!-- render in js -->
           </div>
+          <h2 class="search__info" id="search-status"></h2>
         </div>
       </div>
-    </main>
+    </div>
     <footer class="footer">
       <div class="all container">
         <div class="market-image">
@@ -179,14 +164,14 @@
         </div>
       </div>
     </footer>
+    <!-- Javascripts -->
+    <script src="src/scripts/index.js"></script>
+    <script src="src/scripts/utils/url-parser.js"></script>
+    <script src="src/scripts/utils/rating-handler.js"></script>
+    <script src="src/scripts/utils/pricing-utils.js"></script>
+    <script src="src/scripts/data/products-data.js"></script>
+    <script src="src/scripts/data/products-source.js"></script>
+    <script src="src/scripts/views/template-creator.js"></script>
+    <script src="src/scripts/search.js"></script>
   </body>
-  <!-- Javascripts -->
-  <script src="src/scripts/index.js"></script>
-  <script src="src/scripts/utils/url-parser.js"></script>
-  <script src="src/scripts/utils/rating-handler.js"></script>
-  <script src="src/scripts/utils/pricing-utils.js"></script>
-  <script src="src/scripts/views/template-creator.js"></script>
-  <script src="src/scripts/data/products-data.js"></script>
-  <script src="src/scripts/data/products-source.js"></script>
-  <script src="src/scripts/detail.js"></script>
 </html>

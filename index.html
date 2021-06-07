@@ -13,34 +13,217 @@
     <link rel="stylesheet" href="src/styles/globals.css" />
     <link rel="stylesheet" href="src/styles/responsive/globals.rwd.css" />
     <link rel="stylesheet" href="src/styles/pages/home.css" />
+    <link rel="stylesheet" href="src/styles/responsive/home.rwd.css" />
     <title>Next Market</title>
   </head>
+
   <body>
-    <div class="container">
-      <img src="src/assets/logo-icon.svg" alt="Next Market" />
-      <h1>Home Page</h1>
-      <h2>Next Market</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-        incidunt temporibus qui tempora cumque ut officiis in fuga assumenda,
-        praesentium dolores, dolor cupiditate quos hic veritatis omnis a unde
-        tenetur. Quidem, quas obcaecati distinctio veritatis ea eius aut
-        molestiae impedit voluptas vitae consequuntur saepe placeat suscipit
-        libero nesciunt esse neque enim, atque delectus doloribus modi
-        perferendis inventore earum et. Facilis? Accusantium nesciunt odit,
-        distinctio officia deserunt dolor ad fugiat rerum impedit explicabo
-        nostrum cupiditate architecto nam laudantium? Quo illo iste reiciendis
-        minus sed fuga tenetur, deserunt voluptatibus corrupti ea labore! Vel
-        ullam id consequuntur sint ducimus illum dolorem, minima laudantium
-        aliquam consequatur culpa. Illum, quia corrupti distinctio cum ea
-        cumque. Dignissimos voluptas sit eum assumenda at eius temporibus, esse
-        cumque! Ad velit facilis, expedita, beatae dolorem totam iusto quos
-        nobis fugit esse iure cumque eligendi temporibus, sit consequatur
-        officiis alias ratione quia delectus. Natus doloremque quos modi ut
-        eaque accusantium.
-      </p>
-    </div>
+    <nav class="nav">
+      <div class="container nav__wrapper">
+        <!-- logo -->
+        <a href="index.html" class="nav__logo-link">
+          <img
+            src="src/assets/logo-icon.svg"
+            alt="nextmarket"
+            class="nav__logo"
+          />
+        </a>
+        <!-- input search -->
+        <form
+          class="nav__search"
+          id="search-form"
+          method="GET"
+          action="search.html"
+        >
+          <input
+            type="text"
+            class="nav__search-input"
+            placeholder="Search your need’s ..."
+            name="q"
+          />
+          <button type="submit" class="nav__search-button">
+            <img
+              src="src/assets/icons/search.svg"
+              alt=""
+              class="nav__search-icon"
+            />
+          </button>
+        </form>
+        <div class="nav__right">
+          <!-- navigation -->
+          <ul class="nav__navigation">
+            <li>
+              <a href="index.html" class="nav__navigation-link">
+                <img
+                  src="src/assets/icons/home.svg"
+                  alt=""
+                  class="nav__navigation-icon"
+                />
+                <span class="nav__navigation-text">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav__navigation-link">
+                <img
+                  src="src/assets/icons/category.svg"
+                  alt=""
+                  class="nav__navigation-icon"
+                />
+                <span class="nav__navigation-text">Category</span>
+              </a>
+            </li>
+            <li>
+              <a href="cart.html" class="nav__navigation-link">
+                <img
+                  src="src/assets/icons/cart.svg"
+                  alt=""
+                  class="nav__navigation-icon"
+                />
+                <span class="nav__navigation-text">Cart</span>
+              </a>
+            </li>
+          </ul>
+          <!-- auth cta -->
+          <div class="nav__auth">
+            <a href="#" class="nav__auth-toggler">
+              <img
+                src="src/assets/icons/user-avatar.svg"
+                alt=""
+                class="nav__auth-toggler-icon"
+              />
+            </a>
+            <ul class="nav__auth-action">
+              <li>
+                <a href="signup.html" class="btn btn--fill nav__auth-link">
+                  Sign-Up
+                </a>
+              </li>
+              <li>
+                <a href="signin.html" class="btn btn--outline nav__auth-link">
+                  Sign-In
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <!--start:banner-->
+        <div class="banner">
+          <img
+            src="src/assets/images/banners/banner-1.png"
+            alt="free shipping on your first order"
+            class="banner__img"
+          />
+        </div>
+        <!--end:banner-->
+
+        <!--start:flash sale-->
+        <div class="fs__container">
+          <div class="fs__header">
+            <div class="fs__header__left">
+              <h1 class="fs__header__left__title">FLASH SALE</h1>
+              <div class="fs__header__timer">
+                <span class="fs__header__left__time">00</span>
+                <span class="fs__header__left__time__separator">:</span>
+                <span class="fs__header__left__time">00</span>
+                <span class="fs__header__left__time__separator">:</span>
+                <span class="fs__header__left__time">00</span>
+                <span class="fs__header__left__time__separator">:</span>
+                <span class="fs__header__left__time">00</span>
+              </div>
+            </div>
+            <div class="fs__header__right">
+              <img
+                src="src/assets/brand/brand-1.svg"
+                alt="SanDisk"
+                class="fs__header__right__img"
+              />
+              <img
+                src="src/assets/brand/brand-2.svg"
+                alt="Nike"
+                class="fs__header__right__img"
+              />
+              <img
+                src="src/assets/brand/brand-3.svg"
+                alt="Gucci"
+                class="fs__header__right__img"
+              />
+              <img
+                src="src/assets/brand/brand-4.svg"
+                alt="Asus"
+                class="fs__header__right__img"
+              />
+              <img
+                src="src/assets/brand/brand-5.svg"
+                alt="Levi's"
+                class="fs__header__right__img"
+              />
+            </div>
+          </div>
+          <div class="all__product__horizontal" id="flash-sale-container">
+            <!-- render in js -->
+          </div>
+        </div>
+        <!--end: flash sale-->
+
+        <div class="all__product__vertical">
+          <div class="all__product__horizontal" id="normal-sale-container">
+            <!-- render in js -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="all container">
+        <div class="market-image">
+          <img src="src/assets/logo-full-white.svg" alt="Picture1" />
+          <p class="paragraph">Copyright 2021- NextMarket</p>
+        </div>
+        <div class="next-market">
+          <ul>
+            NextMarket
+          </ul>
+          <li><a href="">About Next Market</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms And Conditions</a></li>
+          <li><a href="">Career</a></li>
+        </div>
+        <div class="seller">
+          <ul>
+            Seller
+          </ul>
+          <li><a href="">NextMarket Official Store</a></li>
+          <li><a href="">Seller Centre</a></li>
+          <li><a href="">Sell Product on NextMarket</a></li>
+        </div>
+        <div class="buyer">
+          <ul>
+            Buyer
+          </ul>
+          <li><a href="">How To shop</a></li>
+          <li><a href="">Payments</a></li>
+          <li><a href="">Promo</a></li>
+        </div>
+        <div class="search-img">
+          <img
+            src="src/assets/images/illustration-online-shopping.svg"
+            alt="Picture2"
+          />
+        </div>
+      </div>
+    </footer>
+
     <!-- Javascripts -->
-    <script src="src/scripts/home.js" type="module"></script>
+    <script src="src/scripts/index.js"></script>
+    <script src="src/scripts/utils/rating-handler.js"></script>
+    <script src="src/scripts/utils/pricing-utils.js"></script>
+    <script src="src/scripts/data/products-data.js"></script>
+    <script src="src/scripts/data/products-source.js"></script>
+    <script src="src/scripts/views/template-creator.js"></script>
+    <script src="src/scripts/home.js"></script>
   </body>
 </html>

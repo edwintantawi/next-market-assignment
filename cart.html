@@ -4,23 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Next Market | Cart</title>
     <link rel="stylesheet" href="src/styles/globals.css" />
     <link rel="stylesheet" href="src/styles/responsive/globals.rwd.css" />
-    <link rel="stylesheet" href="src/styles/pages/detail.css" />
-    <link rel="stylesheet" href="src/styles/responsive/details.rwd.css" />
-    <title>Next Market | Detail</title>
+    <link rel="stylesheet" href="src/styles/card.css" />
+    <link rel="stylesheet" href="src/styles/pages/cart.css" />
+    <link rel="stylesheet" href="src/styles/responsive/cart.rwd.css" />
   </head>
+
   <body>
+    <!-- Start Navbar -->
     <nav class="nav">
       <div class="container nav__wrapper">
         <!-- logo -->
-        <a href="index.html" class="nav__logo-link">
+        <a href="index.html">
           <img
             src="src/assets/logo-icon.svg"
             alt="nextmarket"
@@ -107,38 +104,33 @@
         </div>
       </div>
     </nav>
-    <main class="detail">
+    <!-- End Navbar -->
+
+    <!-- Start Cart -->
+    <main class="cart">
       <div class="container container--grid">
         <div class="container__left">
-          <section class="product" id="product-info">
-            <!-- render in js -->
-          </section>
-          <!-- review -->
-          <section class="review">
-            <h2>Rewiew’s</h2>
-            <div class="review__rating" id="review-rating">
+          <div class="all__product__vertical">
+            <div class="all__product__horizontal" id="cart-container">
               <!-- render in js -->
             </div>
-
-            <div class="review__message" id="review-message">
-              <!-- render in js -->
-            </div>
-          </section>
-          <!-- recomendation -->
-          <section class="recomendation">
-            <h2>Recomendation's for you</h2>
-            <div class="recomendation__list" id="recomendation-list">
-              <!-- product cart -->
-            </div>
-          </section>
+          </div>
         </div>
         <div class="container__right">
-          <div class="subtotal" id="subtotal">
-            <!-- render in js -->
+          <div class="subtotal">
+            <div>
+              <span class="subtotal__title">Total</span>
+              <div class="subtotal--wrapper">
+                <span class="subtotal__price" id="total-price"></span>
+                <span class="subtotal__stock" id="num-of-product"></span>
+              </div>
+            </div>
+            <a href="#" class="btn btn--fill" id="order">Order Now</a>
           </div>
         </div>
       </div>
     </main>
+    <!-- End Cart -->
     <footer class="footer">
       <div class="all container">
         <div class="market-image">
@@ -179,14 +171,14 @@
         </div>
       </div>
     </footer>
+
+    <script src="src/scripts/index.js"></script>
+    <script src="src/scripts/utils/url-parser.js"></script>
+    <script src="src/scripts/utils/rating-handler.js"></script>
+    <script src="src/scripts/utils/pricing-utils.js"></script>
+    <script src="src/scripts/data/products-data.js"></script>
+    <script src="src/scripts/data/products-source.js"></script>
+    <script src="src/scripts/views/template-creator.js"></script>
+    <script src="src/scripts/cart.js"></script>
   </body>
-  <!-- Javascripts -->
-  <script src="src/scripts/index.js"></script>
-  <script src="src/scripts/utils/url-parser.js"></script>
-  <script src="src/scripts/utils/rating-handler.js"></script>
-  <script src="src/scripts/utils/pricing-utils.js"></script>
-  <script src="src/scripts/views/template-creator.js"></script>
-  <script src="src/scripts/data/products-data.js"></script>
-  <script src="src/scripts/data/products-source.js"></script>
-  <script src="src/scripts/detail.js"></script>
 </html>

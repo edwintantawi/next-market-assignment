@@ -1,0 +1,36 @@
+@media screen and (min-width: 500px) {
+  .all__product__horizontal {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+@media screen and (min-width: 425px) {
+  .fs__container {
+    margin: 0.8rem 0 30px;
+  }
+  .fs__header {
+    padding: 1rem 2.5rem;
+  }
+  .fs__header__timer {
+    margin-top: 0;
+  }
+  .fs__header__left {
+    align-items: center;
+    flex-direction: row;
+  }
+  .fs__header__left__title {
+    margin-right: 1.5rem;
+  }
+  .fs__header {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 780px) {
+  .fs__header {
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 1076px) {
+  .fs__header__right {
+    display: flex;
+  }
+}
