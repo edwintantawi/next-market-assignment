@@ -11,7 +11,7 @@ const PRODUCTS_DATA = [
       type: 'flashsale',
       percent: 50,
     },
-    product_star: [0, 0, 0, 12, 82],
+    product_star: [0, 0, 0, 2, 10],
     product_sold: 12,
     product_stock: 86,
     product_description:
@@ -72,7 +72,7 @@ const PRODUCTS_DATA = [
       type: 'flashsale',
       percent: 48,
     },
-    product_star: [0, 0, 0, 8, 5],
+    product_star: [0, 0, 2, 8, 13],
     product_sold: 122,
     product_stock: 871,
     product_description:
@@ -174,7 +174,7 @@ const PRODUCTS_DATA = [
       type: 'flashsale',
       percent: 42,
     },
-    product_star: [3, 2, 5, 1, 21],
+    product_star: [3, 2, 5, 1, 11],
     product_sold: 49,
     product_stock: 39,
     product_description:
@@ -207,7 +207,7 @@ const PRODUCTS_DATA = [
       type: null,
       percent: 0,
     },
-    product_star: [0, 0, 3, 9, 21],
+    product_star: [8, 0, 3, 9, 21],
     product_sold: 97,
     product_stock: 24,
     product_description:
@@ -279,7 +279,7 @@ const PRODUCTS_DATA = [
       type: null,
       percent: 0,
     },
-    product_star: [0, 0, 0, 12, 47],
+    product_star: [0, 6, 0, 12, 47],
     product_sold: 249,
     product_stock: 871,
     product_description:
